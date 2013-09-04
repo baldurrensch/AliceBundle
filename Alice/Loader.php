@@ -58,6 +58,7 @@ class Loader
         $this->processors = array();
         $this->logger = $logger;
         $this->references = new ArrayCollection();
+        $this->providers = array();
     }
 
     /**
