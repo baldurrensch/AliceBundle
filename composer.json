@@ -19,7 +19,8 @@
     "require-dev": {
         "symfony/framework-bundle": "~2.1",
         "symfony/yaml": "~2.1",
-        "mockery/mockery": "dev-master@dev"
+        "mockery/mockery": "dev-master@dev",
+        "phpspec/prophecy-phpunit": "1.0.x-dev@dev"
     },
     "autoload": {
         "psr-0": { "Hautelook\\AliceBundle": "" }

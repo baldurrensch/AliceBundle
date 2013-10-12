@@ -32,11 +32,14 @@ abstract class DataFixtureLoader implements FixtureInterface, ContainerAwareInte
      */
     public function load(ObjectManager $manager)
     {
+
         $this->manager = $manager;
         /** @var $loader \Hautelook\AliceBundle\Alice\Loader */
         $loader = $this->container->get('hautelook_alice.loader');
+
         $loader->setObjectManager($manager);
         $loader->setProviders(array($this));
+
 
         foreach ($this->getProcessors() as $processor) {
             $loader->addProcessor($processor);
