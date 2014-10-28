@@ -2,27 +2,11 @@
 
 namespace Hautelook\AliceBundle\Tests\Functional\Command;
 
-use Doctrine\Bundle\DoctrineBundle\Command\Proxy\CreateSchemaDoctrineCommand;
-use Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand;
-use Hautelook\AliceBundle\Tests\Functional\TestCase;
-use Symfony\Bundle\FrameworkBundle\Console\Application;
-use Symfony\Component\Console\Tester\CommandTester;
-
-class DoctrineFixtureTest extends TestCase
+class DoctrineFixtureTest extends AbstractCommandTest
 {
-    /**
-     * @var Application
-     */
-    private $application;
-
     public function testFixture()
     {
-        $command = $this->application->find('doctrine:fixtures:load');
-
-        $commandTester = new CommandTester($command);
-        $commandTester->execute(array(), array('interactive' => false));
-
-        $display = $commandTester->getDisplay();
+        $display = $this->getFixtureDisplay();
 
         $this->assertContains('> purging database', $display);
         $this->assertContains(
@@ -36,33 +20,6 @@ class DoctrineFixtureTest extends TestCase
 
         $this->verifyProducts();
         $this->verifyBrands();
-    }
-
-    protected function setUp()
-    {
-        parent::setUp();
-
-        $this->application = new Application(self::getKernel());
-        $this->application->add(new LoadDataFixturesDoctrineCommand());
-        $this->application->add(new CreateSchemaDoctrineCommand());
-
-        $this->createDB();
-    }
-
-    private function createDB()
-    {
-        $command = $this->application->find('doctrine:schema:create');
-
-        $commandTester = new CommandTester($command);
-        $commandTester->execute(array());
-    }
-
-    /**
-     * @return \Doctrine\Bundle\DoctrineBundle\Registry
-     */
-    private function getDoctrine()
-    {
-        return $this->application->getKernel()->getContainer()->get('doctrine');
     }
 
     private function verifyProducts()
@@ -92,5 +49,10 @@ class DoctrineFixtureTest extends TestCase
                 $i
             );
         }
+    }
+
+    protected function getCommands()
+    {
+        return array();
     }
 }

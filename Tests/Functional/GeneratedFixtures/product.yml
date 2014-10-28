@@ -1,0 +1,83 @@
+Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product:
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_1:
+        id: 1
+        name: 'Product 1'
+        price: 10
+        description: 'Awesome Product 1'
+        brand: '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_6'
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_2:
+        id: 2
+        name: 'Product 2'
+        price: 10
+        description: 'Awesome Product 2'
+        brand: '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_1'
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_3:
+        id: 3
+        name: 'Product 3'
+        price: 10
+        description: 'Awesome Product 3'
+        brand: '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_8'
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_7:
+        id: 7
+        name: 'Product 7'
+        price: 10
+        description: 'Awesome Product 7'
+        brand: '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_8'
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_10:
+        id: 10
+        name: 'Product 10'
+        price: 10
+        description: 'Awesome Product 10'
+        brand: '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_8'
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_4:
+        id: 4
+        name: 'Product 4'
+        price: 10
+        description: 'Awesome Product 4'
+        brand: '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_10'
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_5:
+        id: 5
+        name: 'Product 5'
+        price: 10
+        description: 'Awesome Product 5'
+        brand: '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_10'
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_8:
+        id: 8
+        name: 'Product 8'
+        price: 10
+        description: 'Awesome Product 8'
+        brand: '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_10'
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_6:
+        id: 6
+        name: 'Product 6'
+        price: 10
+        description: 'Awesome Product 6'
+        brand: '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_9'
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_9:
+        id: 9
+        name: 'Product 9'
+        price: 10
+        description: 'Awesome Product 9'
+        brand: '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_9'
+
+Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand:
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_6:
+        id: 6
+        name: null
+        products: ['@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_1']
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_1:
+        id: 1
+        name: null
+        products: ['@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_2']
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_8:
+        id: 8
+        name: null
+        products: ['@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_3', '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_7', '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_10']
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_10:
+        id: 10
+        name: null
+        products: ['@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_4', '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_5', '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_8']
+    Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Brand_9:
+        id: 9
+        name: null
+        products: ['@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_6', '@Hautelook\AliceBundle\Tests\Functional\TestBundle\Entity\Product_9']
