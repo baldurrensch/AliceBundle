@@ -25,7 +25,7 @@ class FixtureLoader1 extends DataFixtureLoader implements DependentFixtureInterf
      *
      * @return string[]
      */
-    function getDependencies()
+    public function getDependencies()
     {
         return array(
             'Hautelook\AliceBundle\Tests\Functional\TestBundle\DataFixtures\ORM\FixtureLoader2',

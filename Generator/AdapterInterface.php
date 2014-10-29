@@ -32,14 +32,14 @@ interface AdapterInterface
      * Generates fixtures representing the entity
      *
      * @param mixed $entity
-     * @return array
+     * @return Fixture
      */
     public function generateFixture($entity);
 
     /**
      * Retrieves all the generated fixtures
      *
-     * @return Fixture[]|ArrayCollection
+     * @return ArrayCollection
      */
     public function getFixtures();
 } 

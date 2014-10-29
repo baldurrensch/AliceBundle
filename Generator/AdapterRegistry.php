@@ -33,4 +33,4 @@ class AdapterRegistry
     {
         return $this->adapters[$key];
     }
-} 
+}

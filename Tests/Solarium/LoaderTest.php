@@ -71,6 +71,9 @@ class LoaderTest extends \PHPUnit_Framework_TestCase
             ->with($this->updateStatement);
     }
 
+    /**
+     * @param string $arg
+     */
     public function createMockDocument($arg)
     {
         $document = $this->getMockBuilder('Solarium\QueryType\Update\Query\Document\DocumentInterface')

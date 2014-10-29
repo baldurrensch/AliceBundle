@@ -180,7 +180,7 @@ class Loader
 
     /**
      * Returns whether the passed in object has "identity" as defined by Doctrine.
-     * 
+     *
      * @param mixed $reference
      * @return bool
      */

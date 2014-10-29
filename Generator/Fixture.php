@@ -22,6 +22,10 @@ class Fixture
      */
     private $identifier;
 
+    /**
+     * @param string $class
+     * @param string $identifier
+     */
     public function __construct($class, $identifier)
     {
         $this->className = $class;
@@ -78,8 +82,8 @@ class Fixture
         return $this->identifier;
     }
 
-    function isWholeNumber($var)
+    public function isWholeNumber($var)
     {
         return (is_numeric($var) && (intval($var) == floatval($var)));
     }
-} 
+}

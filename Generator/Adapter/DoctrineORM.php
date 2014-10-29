@@ -124,4 +124,4 @@ class DoctrineORM implements AdapterInterface
 
         return $this->fixtures->get($key);
     }
-} 
+}
