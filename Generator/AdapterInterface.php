@@ -42,4 +42,4 @@ interface AdapterInterface
      * @return ArrayCollection
      */
     public function getFixtures();
-} 
+}

@@ -114,7 +114,7 @@ class DoctrineORM implements AdapterInterface
 
     /**
      * @param $associatedEntity
-     * @return array
+     * @return Fixture
      */
     protected function generateFixtureForAssociation($associatedEntity)
     {
